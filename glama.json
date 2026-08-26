@@ -1,0 +1,7 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": ["dryow1"],
+  "displayName": "Steel Brain",
+  "description": "Steel domain knowledge for AI agents — trade-verified grade properties, substitution verdicts, and mill-cert guidance. 23 grades across carbon/alloy/stainless bar, plate, pipe. Returns an honest 'not in knowledge base' rather than guessing.",
+  "categories": ["manufacturing", "engineering", "materials", "procurement"]
+}

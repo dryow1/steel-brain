@@ -1,0 +1,13 @@
+Steel Brain — NOTICE
+
+The SOFTWARE (source code in this repository) is licensed under the MIT License.
+
+The KNOWLEDGE BASE content (files under kb/: grades.json, substitutions.json,
+certs.json — the grade data, substitution rulings, and cert guidance) is
+PROPRIETARY and is NOT covered by the MIT License. It is provided in this
+repository for transparency and for running the service. It may not be
+redistributed, resold, or used to train models or build competing datasets
+without written permission.
+
+The value of Steel Brain is the trade-verified knowledge base. The code is open;
+the knowledge is not.
