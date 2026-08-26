@@ -1,0 +1,15 @@
+[Unit]
+Description=Steel Brain API
+After=network.target
+
+[Service]
+Type=simple
+User=steelbrain
+WorkingDirectory=/opt/steel-brain
+Environment=SB_DB=/opt/steel-brain/shell.db
+ExecStart=/opt/steel-brain/venv/bin/uvicorn steel_brain.http_api:app --host 0.0.0.0 --port 8080 --app-dir /opt/steel-brain/src
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

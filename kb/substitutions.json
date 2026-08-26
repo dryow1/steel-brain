@@ -1,0 +1,353 @@
+[
+  {
+    "from": "4140RB",
+    "to": "4140QT",
+    "application": "machined",
+    "verdict": "invalid",
+    "reasoning": "Same alloy, opposite heat-treat state. A customer expecting pre-hardened (QT) who receives annealed (RB) will fail their job. Never substitute silently.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140QT",
+    "to": "4140RB",
+    "application": "machined",
+    "verdict": "invalid",
+    "reasoning": "Same alloy, opposite heat-treat state. Annealed cannot replace pre-hardened where hardness is required. Never substitute silently.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "SS316L",
+    "to": "SS304L",
+    "application": "machined",
+    "verdict": "invalid",
+    "reasoning": "Different corrosion class. Marine/chemical jobs WILL fail on 304. Never downgrade 316 to 304.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "SS304L",
+    "to": "SS316L",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "304->316 is UP the corrosion ladder (better) and acceptable; confirm the customer isn't over-paying if 304 suffices.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "EH36PL",
+    "to": "MS36PL",
+    "application": "welded-structural",
+    "verdict": "invalid",
+    "reasoning": "Yield strength roughly 2.4x different. Structural calculations done for EH36 will be wrong with MS36. Never substitute.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "MS36PL",
+    "to": "EH36PL",
+    "application": "welded-structural",
+    "verdict": "valid",
+    "reasoning": "EH36 exceeds MS36/A36 on yield and adds impact certification. Acceptable to supply EH36 against a mild-steel structural need.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "APISML",
+    "to": "APIERW",
+    "application": "pressure",
+    "verdict": "invalid",
+    "reasoning": "Pressure-rated jobs require seamless. ERW has a seam and different cert - not interchangeable for pressure service.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "APIERW",
+    "to": "APISML",
+    "application": "pressure",
+    "verdict": "valid",
+    "reasoning": "Seamless exceeds welded for pressure service. Acceptable to supply SMLS against an ERW need.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "APISML",
+    "to": "APIERW",
+    "application": "structural",
+    "verdict": "valid",
+    "reasoning": "For structural/large-bore (non-pressure) use, ERW is acceptable and seamless certainly is.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "EH36PL",
+    "application": "welded-structural",
+    "verdict": "valid",
+    "reasoning": "Human ruling (1 Aug 2026): EH36 meets every requirement S355 states (same 355 MPa yield) PLUS -40C Charpy impact and class approval. Quoting EH36 against an S355 request answers it. One direction only.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "EH36PL",
+    "to": "S355RB",
+    "application": "welded-structural",
+    "verdict": "conditional",
+    "reasoning": "Reverse of S355<-EH36: S355 lacks EH36's impact certification and class approval. Only valid if the job genuinely does not need impact/class - confirm with customer.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1020RB",
+    "to": "1045RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1020RB->1045RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1020RB",
+    "to": "S355RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1020RB->S355RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1020RB",
+    "to": "4140RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1020RB->4140RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1020RB",
+    "to": "4140QT",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1020RB->4140QT) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1020RB",
+    "to": "4340RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1020RB->4340RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1045RB",
+    "to": "1020RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (1045RB->1020RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1045RB",
+    "to": "S355RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1045RB->S355RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1045RB",
+    "to": "4140RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1045RB->4140RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1045RB",
+    "to": "4140QT",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1045RB->4140QT) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "1045RB",
+    "to": "4340RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (1045RB->4340RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "1020RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (S355RB->1020RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "1045RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (S355RB->1045RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "4140RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (S355RB->4140RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "4140QT",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (S355RB->4140QT) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "S355RB",
+    "to": "4340RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (S355RB->4340RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140RB",
+    "to": "1020RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140RB->1020RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140RB",
+    "to": "1045RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140RB->1045RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140RB",
+    "to": "S355RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140RB->S355RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140RB",
+    "to": "4340RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (4140RB->4340RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140QT",
+    "to": "1020RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140QT->1020RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140QT",
+    "to": "1045RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140QT->1045RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140QT",
+    "to": "S355RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4140QT->S355RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4140QT",
+    "to": "4340RB",
+    "application": "machined",
+    "verdict": "valid",
+    "reasoning": "Substituting UP the strength ladder (4140QT->4340RB) gives a stronger material; acceptable for machined parts sized to the lower grade. Confirm if hardness-critical.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4340RB",
+    "to": "1020RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4340RB->1020RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4340RB",
+    "to": "1045RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4340RB->1045RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4340RB",
+    "to": "S355RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4340RB->S355RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4340RB",
+    "to": "4140RB",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4340RB->4140RB) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  },
+  {
+    "from": "4340RB",
+    "to": "4140QT",
+    "application": "machined",
+    "verdict": "conditional",
+    "reasoning": "Substituting DOWN the ladder (4340RB->4140QT) gives a weaker material. Only valid with explicit customer agreement.",
+    "verified_by": "kee",
+    "verified_date": "2026-08-22"
+  }
+]

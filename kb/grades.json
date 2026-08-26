@@ -1,0 +1,1327 @@
+[
+  {
+    "grade_id": "S355HB",
+    "names": [
+      "S355J2H",
+      "ST52HB",
+      "S355 hollow bar"
+    ],
+    "standards": [
+      "EN 10210-1",
+      "EN 10219-1"
+    ],
+    "condition": "hot-finished / cold-formed hollow section",
+    "forms": [
+      "hollow bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.22
+      ],
+      "Si": [
+        0.0,
+        0.55
+      ],
+      "Mn": [
+        0.0,
+        1.6
+      ],
+      "P": [
+        0.0,
+        0.03
+      ],
+      "S": [
+        0.0,
+        0.03
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        470,
+        630
+      ],
+      "yield_mpa": [
+        355,
+        355
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "bushings",
+      "sleeves",
+      "hydraulic cylinder bodies",
+      "machined fittings"
+    ],
+    "weldability": "good \u2014 standard structural weldable grade",
+    "notes": "#1 product by revenue. Pre-bored stock saving customer the drilling step. BMS code contains both S355HB and ST52HB grades.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "APISML",
+    "names": [
+      "API 5L Grade B",
+      "API 5L B SMLS",
+      "API 5L seamless"
+    ],
+    "standards": [
+      "API 5L"
+    ],
+    "condition": "seamless pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.28
+      ],
+      "Mn": [
+        0.0,
+        1.2
+      ],
+      "P": [
+        0.0,
+        0.03
+      ],
+      "S": [
+        0.0,
+        0.03
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        415,
+        null
+      ],
+      "yield_mpa": [
+        245,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "pressure pipe",
+      "oil & gas",
+      "process piping"
+    ],
+    "weldability": "good \u2014 carbon steel line pipe",
+    "notes": "Seamless \u2014 required for pressure-rated work. NOT interchangeable with APIERW (welded).",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "1020RB",
+    "names": [
+      "AISI 1020",
+      "S20C",
+      "C22"
+    ],
+    "standards": [
+      "ASTM A29",
+      "JIS G4051"
+    ],
+    "condition": "as-rolled / cold-drawn",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.17,
+        0.23
+      ],
+      "Mn": [
+        0.3,
+        0.6
+      ],
+      "P": [
+        0.0,
+        0.04
+      ],
+      "S": [
+        0.0,
+        0.05
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        380,
+        450
+      ],
+      "yield_mpa": [
+        210,
+        250
+      ],
+      "hardness_hb": [
+        111,
+        149
+      ]
+    },
+    "typical_applications": [
+      "general machining",
+      "low-stress parts",
+      "shafts",
+      "studs"
+    ],
+    "weldability": "excellent \u2014 low carbon",
+    "notes": "Entry-level general machining feedstock.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "4140RB",
+    "names": [
+      "AISI 4140",
+      "42CrMo4",
+      "SCM440",
+      "4140 annealed"
+    ],
+    "standards": [
+      "ASTM A29",
+      "EN 10083-3",
+      "JIS G4105"
+    ],
+    "condition": "annealed / soft",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.38,
+        0.43
+      ],
+      "Si": [
+        0.15,
+        0.35
+      ],
+      "Mn": [
+        0.75,
+        1.0
+      ],
+      "Cr": [
+        0.8,
+        1.1
+      ],
+      "Mo": [
+        0.15,
+        0.25
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        655,
+        null
+      ],
+      "yield_mpa": [
+        415,
+        null
+      ],
+      "hardness_hb": [
+        197,
+        235
+      ]
+    },
+    "typical_applications": [
+      "parts to be heat-treated by customer",
+      "general alloy machining"
+    ],
+    "weldability": "poor \u2014 preheat and post-weld heat treat required",
+    "notes": "SOFT condition. Customer must heat-treat. DO NOT substitute for 4140QT (pre-hardened) \u2014 opposite heat-treat state.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "4140QT",
+    "names": [
+      "AISI 4140 QT",
+      "42CrMo4 Q&T",
+      "SCM440 QT",
+      "4140 pre-hardened"
+    ],
+    "standards": [
+      "ASTM A29",
+      "EN 10083-3",
+      "JIS G4105"
+    ],
+    "condition": "quenched & tempered (pre-hardened)",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.38,
+        0.43
+      ],
+      "Si": [
+        0.15,
+        0.35
+      ],
+      "Mn": [
+        0.75,
+        1.0
+      ],
+      "Cr": [
+        0.8,
+        1.1
+      ],
+      "Mo": [
+        0.15,
+        0.25
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        850,
+        1000
+      ],
+      "yield_mpa": [
+        550,
+        700
+      ],
+      "hardness_hb": [
+        248,
+        302
+      ]
+    },
+    "typical_applications": [
+      "shafts",
+      "pins",
+      "gears",
+      "piston rods",
+      "high-load components"
+    ],
+    "weldability": "poor \u2014 preheat required; not for structural welding",
+    "notes": "Pre-hardened ~28\u201334 HRC. DO NOT substitute for 4140RB (annealed) \u2014 customer expecting pre-hardened will fail their job.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "1045RB",
+    "names": [
+      "AISI 1045",
+      "S45C",
+      "C45"
+    ],
+    "standards": [
+      "ASTM A29",
+      "JIS G4051",
+      "EN 10083-2"
+    ],
+    "condition": "as-rolled / cold-drawn",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.43,
+        0.5
+      ],
+      "Mn": [
+        0.6,
+        0.9
+      ],
+      "P": [
+        0.0,
+        0.04
+      ],
+      "S": [
+        0.0,
+        0.05
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        570,
+        700
+      ],
+      "yield_mpa": [
+        310,
+        450
+      ],
+      "hardness_hb": [
+        163,
+        201
+      ]
+    },
+    "typical_applications": [
+      "shafts",
+      "bushings",
+      "medium-strength machined parts",
+      "auto tooling"
+    ],
+    "weldability": "fair \u2014 preheat recommended above ~0.45%C",
+    "notes": "Medium-carbon. Step up from 1020 when strength matters.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "S355RB",
+    "names": [
+      "S355J2",
+      "ST52",
+      "ST52-3",
+      "S275 (close)"
+    ],
+    "standards": [
+      "EN 10025-2"
+    ],
+    "condition": "as-rolled / normalised",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.2
+      ],
+      "Si": [
+        0.0,
+        0.55
+      ],
+      "Mn": [
+        0.0,
+        1.6
+      ],
+      "P": [
+        0.0,
+        0.025
+      ],
+      "S": [
+        0.0,
+        0.025
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        470,
+        630
+      ],
+      "yield_mpa": [
+        355,
+        355
+      ],
+      "hardness_hb": [
+        146,
+        187
+      ]
+    },
+    "typical_applications": [
+      "weldable structural",
+      "marine fab",
+      "offshore structural"
+    ],
+    "weldability": "good \u2014 structural welding grade",
+    "notes": "DIN ST52 = EN S355J2, same steel. Some BMS rows carry legacy ST52RB naming.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "MS36PL",
+    "names": [
+      "A36",
+      "ASTM A36",
+      "SS400",
+      "S275 plate",
+      "mild steel plate"
+    ],
+    "standards": [
+      "ASTM A36"
+    ],
+    "condition": "as-rolled",
+    "forms": [
+      "plate"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.26
+      ],
+      "Mn": [
+        0.0,
+        null
+      ],
+      "P": [
+        0.0,
+        0.04
+      ],
+      "S": [
+        0.0,
+        0.05
+      ],
+      "Si": [
+        0.0,
+        0.4
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        400,
+        550
+      ],
+      "yield_mpa": [
+        250,
+        250
+      ],
+      "hardness_hb": [
+        119,
+        159
+      ]
+    },
+    "typical_applications": [
+      "general fabrication",
+      "enclosures",
+      "jig plates",
+      "sheet metal fab"
+    ],
+    "weldability": "excellent",
+    "notes": "'Mild steel'. When customer asks for S275 plate, describe as 'mild steel meeting/exceeding S275'. Do NOT confuse with EH36 (much higher yield).",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "EH36PL",
+    "names": [
+      "EH36",
+      "ABS EH36",
+      "high-tensile structural plate"
+    ],
+    "standards": [
+      "ABS",
+      "DNV",
+      "EN 10025 (equiv)"
+    ],
+    "condition": "normalised / TMCP",
+    "forms": [
+      "plate"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.18
+      ],
+      "Si": [
+        0.1,
+        0.5
+      ],
+      "Mn": [
+        0.9,
+        1.6
+      ],
+      "P": [
+        0.0,
+        0.035
+      ],
+      "S": [
+        0.0,
+        0.035
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        490,
+        620
+      ],
+      "yield_mpa": [
+        355,
+        355
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "offshore deck plate",
+      "marine fab",
+      "crane booms",
+      "heavy structural"
+    ],
+    "weldability": "good \u2014 controlled for shipbuilding",
+    "notes": "Offshore-spec, -40C Charpy impact certified. Yield ~2.4x higher than MS36. Max sheet 2438 x 9144 mm. Dimensions parsed from prod_desc.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "SS316L",
+    "names": [
+      "316L",
+      "SS316",
+      "316",
+      "TP316L",
+      "1.4404"
+    ],
+    "standards": [
+      "ASTM A276",
+      "ASTM A479"
+    ],
+    "condition": "solution annealed",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        16.0,
+        18.0
+      ],
+      "Ni": [
+        10.0,
+        14.0
+      ],
+      "Mo": [
+        2.0,
+        3.0
+      ],
+      "Mn": [
+        0.0,
+        2.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        217
+      ]
+    },
+    "typical_applications": [
+      "marine",
+      "sealing",
+      "pharma/food",
+      "corrosion-resistant parts"
+    ],
+    "weldability": "excellent \u2014 L grade minimises sensitisation",
+    "notes": "ACCELERATING segment. 316 required over 304 for marine/chemical. Mills routinely dual-certify 316/316L.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "4130QT",
+    "names": [
+      "AISI 4130",
+      "25CrMo4",
+      "chromoly Q&T"
+    ],
+    "standards": [
+      "ASTM A29",
+      "EN 10083-3"
+    ],
+    "condition": "quenched & tempered",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.28,
+        0.33
+      ],
+      "Si": [
+        0.15,
+        0.35
+      ],
+      "Mn": [
+        0.4,
+        0.6
+      ],
+      "Cr": [
+        0.8,
+        1.1
+      ],
+      "Mo": [
+        0.15,
+        0.25
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        670,
+        900
+      ],
+      "yield_mpa": [
+        435,
+        700
+      ],
+      "hardness_hb": [
+        197,
+        269
+      ]
+    },
+    "typical_applications": [
+      "downhole tools",
+      "oilfield",
+      "aircraft/tube structures",
+      "high-strength low-weight"
+    ],
+    "weldability": "fair \u2014 preheat required, lower C than 4140",
+    "notes": "Chromoly. Common in oilfield downhole tools.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "SS304L",
+    "names": [
+      "304L",
+      "SS304",
+      "304",
+      "TP304L",
+      "1.4307"
+    ],
+    "standards": [
+      "ASTM A276",
+      "ASTM A479"
+    ],
+    "condition": "solution annealed",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        18.0,
+        20.0
+      ],
+      "Ni": [
+        8.0,
+        12.0
+      ],
+      "Mn": [
+        0.0,
+        2.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        201
+      ]
+    },
+    "typical_applications": [
+      "general stainless",
+      "food equipment",
+      "architectural"
+    ],
+    "weldability": "excellent",
+    "notes": "General stainless. NOT for marine/chemical \u2014 use 316. Mills dual-certify 304/304L.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "4340RB",
+    "names": [
+      "AISI 4340",
+      "34CrNiMo6",
+      "1.6582"
+    ],
+    "standards": [
+      "ASTM A29",
+      "EN 10083-3"
+    ],
+    "condition": "annealed / Q&T",
+    "forms": [
+      "round bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.38,
+        0.43
+      ],
+      "Si": [
+        0.15,
+        0.35
+      ],
+      "Mn": [
+        0.6,
+        0.8
+      ],
+      "Cr": [
+        0.7,
+        0.9
+      ],
+      "Ni": [
+        1.65,
+        2.0
+      ],
+      "Mo": [
+        0.2,
+        0.3
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        745,
+        1240
+      ],
+      "yield_mpa": [
+        470,
+        1080
+      ],
+      "hardness_hb": [
+        217,
+        363
+      ]
+    },
+    "typical_applications": [
+      "highest-strength shafts",
+      "drill collars",
+      "landing gear",
+      "high-load precision"
+    ],
+    "weldability": "poor \u2014 significant preheat and PWHT",
+    "notes": "Highest-strength alloy YHF carries. ACCELERATING since Q3 2024. Growth-stage customer signal.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "316SML",
+    "names": [
+      "316 seamless pipe",
+      "TP316 SMLS",
+      "316L seamless"
+    ],
+    "standards": [
+      "ASTM A312"
+    ],
+    "condition": "seamless pipe, solution annealed",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        16.0,
+        18.0
+      ],
+      "Ni": [
+        10.0,
+        14.0
+      ],
+      "Mo": [
+        2.0,
+        3.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        217
+      ]
+    },
+    "typical_applications": [
+      "process piping",
+      "corrosive media",
+      "marine process"
+    ],
+    "weldability": "excellent",
+    "notes": "Seamless preferred (no weld seam to corrode). Grows alongside SS316L.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "APIERW",
+    "names": [
+      "API 5L Grade B ERW",
+      "API 5L B welded"
+    ],
+    "standards": [
+      "API 5L"
+    ],
+    "condition": "electric resistance welded pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.28
+      ],
+      "Mn": [
+        0.0,
+        1.2
+      ],
+      "P": [
+        0.0,
+        0.03
+      ],
+      "S": [
+        0.0,
+        0.03
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        415,
+        null
+      ],
+      "yield_mpa": [
+        245,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "structural pipe",
+      "large-bore fabricated structures",
+      "lower-pressure lines"
+    ],
+    "weldability": "good",
+    "notes": "Welded (ERW). Acceptable for structural/large-bore. NOT for pressure-rated work \u2014 use APISML.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "A106HB",
+    "names": [
+      "A106 hollow bar",
+      "ASTM A106 Gr B bored"
+    ],
+    "standards": [
+      "ASTM A106"
+    ],
+    "condition": "seamless, bored",
+    "forms": [
+      "hollow bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.3
+      ],
+      "Mn": [
+        0.29,
+        1.06
+      ],
+      "Si": [
+        0.1,
+        null
+      ],
+      "P": [
+        0.0,
+        0.035
+      ],
+      "S": [
+        0.0,
+        0.035
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        415,
+        null
+      ],
+      "yield_mpa": [
+        240,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "higher-spec hollow stock",
+      "high-temp service fittings"
+    ],
+    "weldability": "good",
+    "notes": "Niche higher-spec hollow bar variant.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "304SML",
+    "names": [
+      "304 seamless pipe",
+      "TP304 SMLS",
+      "304L seamless"
+    ],
+    "standards": [
+      "ASTM A312"
+    ],
+    "condition": "seamless pipe, solution annealed",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        18.0,
+        20.0
+      ],
+      "Ni": [
+        8.0,
+        12.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        201
+      ]
+    },
+    "typical_applications": [
+      "general process piping"
+    ],
+    "weldability": "excellent",
+    "notes": "Seamless 304. Use 316SML for marine/chemical.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "S355PL",
+    "names": [
+      "S355J2 plate",
+      "S355 thick plate",
+      "machining block"
+    ],
+    "standards": [
+      "EN 10025-2"
+    ],
+    "condition": "as-rolled / normalised",
+    "forms": [
+      "plate"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.2
+      ],
+      "Si": [
+        0.0,
+        0.55
+      ],
+      "Mn": [
+        0.0,
+        1.6
+      ],
+      "P": [
+        0.0,
+        0.025
+      ],
+      "S": [
+        0.0,
+        0.025
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        470,
+        630
+      ],
+      "yield_mpa": [
+        355,
+        355
+      ],
+      "hardness_hb": [
+        146,
+        187
+      ]
+    },
+    "typical_applications": [
+      "thick cut blocks",
+      "machine bases",
+      "fixtures",
+      "tooling stock"
+    ],
+    "weldability": "good",
+    "notes": "Thick cut blocks for machining, NOT structural sheet. Small dims in prod_desc = machined block.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "304ERW",
+    "names": [
+      "304 welded pipe",
+      "TP304 ERW"
+    ],
+    "standards": [
+      "ASTM A312"
+    ],
+    "condition": "welded pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        18.0,
+        20.0
+      ],
+      "Ni": [
+        8.0,
+        12.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        201
+      ]
+    },
+    "typical_applications": [
+      "low-pressure stainless piping"
+    ],
+    "weldability": "excellent",
+    "notes": "Welded 304. Negligible volume. SML preferred for process.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "SGPERW",
+    "names": [
+      "JIS SGP",
+      "SGP ERW pipe"
+    ],
+    "standards": [
+      "JIS G3452"
+    ],
+    "condition": "welded pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        null,
+        null
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        290,
+        null
+      ],
+      "yield_mpa": [
+        null,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "regional construction",
+      "low-pressure water/air lines"
+    ],
+    "weldability": "good",
+    "notes": "JIS SGP carbon steel pipe for ordinary piping. Regional construction use.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "316ERW",
+    "names": [
+      "316 ERW pipe",
+      "TP316 welded"
+    ],
+    "standards": [
+      "ASTM A312"
+    ],
+    "condition": "welded pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.03
+      ],
+      "Cr": [
+        16.0,
+        18.0
+      ],
+      "Ni": [
+        10.0,
+        14.0
+      ],
+      "Mo": [
+        2.0,
+        3.0
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        485,
+        null
+      ],
+      "yield_mpa": [
+        170,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        217
+      ]
+    },
+    "typical_applications": [
+      "low-pressure corrosion-resistant piping"
+    ],
+    "weldability": "excellent",
+    "notes": "Welded 316. Negligible volume.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "1020HB",
+    "names": [
+      "AISI 1020 bored bar",
+      "1020 hollow"
+    ],
+    "standards": [
+      "ASTM A29"
+    ],
+    "condition": "bored",
+    "forms": [
+      "hollow bar"
+    ],
+    "chemistry": {
+      "C": [
+        0.17,
+        0.23
+      ],
+      "Mn": [
+        0.3,
+        0.6
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        380,
+        450
+      ],
+      "yield_mpa": [
+        210,
+        250
+      ],
+      "hardness_hb": [
+        111,
+        149
+      ]
+    },
+    "typical_applications": [
+      "low-cost bushings",
+      "sleeves"
+    ],
+    "weldability": "excellent",
+    "notes": "Residual volume. Mild-steel hollow stock.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  },
+  {
+    "grade_id": "X52SML",
+    "names": [
+      "API 5L X52",
+      "X52 seamless",
+      "L360"
+    ],
+    "standards": [
+      "API 5L"
+    ],
+    "condition": "seamless pipe",
+    "forms": [
+      "pipe"
+    ],
+    "chemistry": {
+      "C": [
+        0.0,
+        0.28
+      ],
+      "Mn": [
+        0.0,
+        1.4
+      ],
+      "P": [
+        0.0,
+        0.03
+      ],
+      "S": [
+        0.0,
+        0.03
+      ]
+    },
+    "mechanical": {
+      "tensile_mpa": [
+        460,
+        null
+      ],
+      "yield_mpa": [
+        360,
+        null
+      ],
+      "hardness_hb": [
+        null,
+        null
+      ]
+    },
+    "typical_applications": [
+      "high-pressure pipeline",
+      "special order"
+    ],
+    "weldability": "good",
+    "notes": "High-pressure pipeline grade. Special order.",
+    "provenance": "standard_published",
+    "property_source": "Published standards (ASTM/EN/JIS/API/ABS). Not supplier-cert-specific."
+  }
+]

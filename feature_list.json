@@ -1,0 +1,14 @@
+{"features":[
+ {"id":"F01","name":"skeleton+tests","status":"done"},
+ {"id":"F02","name":"kb schema+loader+validator","status":"done"},
+ {"id":"F03","name":"KB content: 40 grades dictated+verified by Kee","status":"todo"},
+ {"id":"F04","name":"grade_lookup","status":"done"},
+ {"id":"F05","name":"substitution_check","status":"done"},
+ {"id":"F06","name":"cert_guide","status":"done"},
+ {"id":"F07","name":"shell auth","status":"done"},
+ {"id":"F08","name":"metering+ratelimit","status":"done"},
+ {"id":"F09","name":"mcp wrapper+health","status":"done"},
+ {"id":"F10","name":"docs","status":"done"},
+ {"id":"F11","name":"VPS deploy","status":"todo"},
+ {"id":"F12","name":"registry submissions","status":"todo"}
+]}
