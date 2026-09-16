@@ -13,7 +13,17 @@
 - [x] F09 MCP wrapper + health
 - [x] F10 docs
 - [ ] F11 deploy to VPS <-- SUNDAY
-- [ ] F12 registry submissions <-- MONDAY
+- [~] F12 registry submissions -- v1.0.0 tagged + GitHub release cut. Dockerfile
+        (stdio, KB baked in) built + verified locally (no docker runtime on
+        dev machine, so verified via clean-venv sim of the exact COPY layout:
+        real MCP initialize/list_tools/grade_lookup all pass). Image built by
+        CI and pushed public to ghcr.io/dryow1/steel-brain:1.0.0. glama.json
+        points at the Dockerfile + declares stdio transport. server.json
+        drafted for the official MCP Registry (io.github.dryow1/steel-brain,
+        oci package) and validated against the live schema; not yet
+        published (needs interactive GitHub device-code auth).
+        <-- REMAINING: glama Dockerfile admin build+release (manual, browser),
+        mcp-publisher login + publish (manual, browser), mcp.so + smithery.ai.
 
 ## KB provenance
 - 23 grades, all serve now (marked draft where property numbers unconfirmed)
