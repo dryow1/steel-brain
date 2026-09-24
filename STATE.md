@@ -35,3 +35,13 @@
 Aliases and substitutions are DONE (Kee ruled them already in the ontology).
 The only open item is confirming the drafted property numbers per grade.
 Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
+
+## v0.2.0 - remote MCP door (24 Sep 2026)
+- /mcp: streamable HTTP MCP endpoint on the same FastAPI app (stateless, JSON responses).
+  No API key; every call logged under key "mcp-public"; shared daily cap
+  SB_MCP_DAILY_CAP (default 2000). Host allowlist SB_MCP_HOSTS (DNS-rebinding guard).
+- REST /v1 unchanged (X-API-Key still required).
+- Tests: 19 passing (15 existing + 4 in tests/test_mcp_http.py).
+- server.json 1.1.0 adds remotes -> https://api.steelbrain.dev/mcp.
+- Unlocks: smithery.ai listing (needed a streamable-HTTP /mcp endpoint).
+- Count remote callers: sqlite3 shell.db "select date(ts),count(*) from usage where key='mcp-public' group by 1"

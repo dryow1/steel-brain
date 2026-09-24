@@ -8,7 +8,7 @@ Also available as a REST API at `https://api.steelbrain.dev`.
 
 ## MCP server
 
-Steel Brain is a [Model Context Protocol](https://modelcontextprotocol.io) server. It exposes three MCP **tools** over stdio transport:
+Steel Brain is a [Model Context Protocol](https://modelcontextprotocol.io) server. It exposes three MCP **tools**, over remote streamable HTTP (no install) or local stdio:
 
 | MCP Tool | What it does |
 |----------|--------------|
@@ -16,7 +16,23 @@ Steel Brain is a [Model Context Protocol](https://modelcontextprotocol.io) serve
 | `substitution_check` | Given from_grade, to_grade, application, returns a verdict (valid / conditional / invalid) with reasoning on whether one grade can substitute another. |
 | `cert_guide` | Which mill certificate applies for a grade + use case (EN 10204 3.1/3.2, class certs ABS/DNV/LR/BV/NK) and what to check. |
 
-### Running the MCP server
+### Remote (no install, free)
+
+Point any MCP client that supports streamable HTTP at:
+
+    https://api.steelbrain.dev/mcp
+
+    {
+      "mcpServers": {
+        "steel-brain": { "type": "http", "url": "https://api.steelbrain.dev/mcp" }
+      }
+    }
+
+Claude Code: `claude mcp add --transport http steel-brain https://api.steelbrain.dev/mcp`
+
+No API key needed. There is a shared daily cap to keep the server healthy.
+
+### Local (stdio)
 
     pip install -r requirements.txt
     python -m steel_brain.mcp_server

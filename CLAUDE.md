@@ -16,7 +16,7 @@ src/steel_brain/
   tools.py     grade_lookup, substitution_check, cert_guide
   shell/       auth.py (API keys), metering.py, ratelimit.py
   http_api.py  FastAPI app (public HTTP door, X-API-Key header)
-  mcp_server.py  MCP stdio server (registry door)
+  mcp_server.py  MCP server (stdio; also mounted at /mcp over streamable HTTP by http_api.py)
 scripts/       validate_kb.py, issue_key.py
 deploy/        setup_vps.sh, steel-brain.service, RUNBOOK.md
 registry/      metadata for the 4 registry submissions
