@@ -12,7 +12,7 @@
 - [x] F08 metering + rate limit
 - [x] F09 MCP wrapper + health
 - [x] F10 docs
-- [ ] F11 deploy to VPS <-- SUNDAY
+- [x] F11 deploy to VPS -- droplet live since Sep 2026, now serving 0.2.0
 - [x] F12 registry submissions -- v1.0.0 tagged + GitHub release cut. Dockerfile
         (stdio, KB baked in) built + verified locally (no docker runtime on
         dev machine, so verified via clean-venv sim of the exact COPY layout:
@@ -23,13 +23,13 @@
         v1.0.0 (oci package, status active). Glama release built + published
         via the admin Dockerfile page -- quality score 58% (up from 33%).
         smithery.ai listed 25 Sep 2026 (see v0.2.0 below).
-        <-- NOT DONE: mcp.so submission (registry/metadata.md still lists it).
+        mcp.so: skipped by decision ($39 pay-to-publish).
 
 ## KB provenance
 - 23 grades, all serve now (marked draft where property numbers unconfirmed)
 - 39 substitution rules, Kee-verified (from dated ontology rulings)
 - 4 cert guides, Kee-verified
-- Tests: 15 passing (10 Gate 2 + 5 domain guards)
+- Tests: 19 passing (10 Gate 2 + 5 domain guards + 4 MCP HTTP)
 
 ## F03 remaining = property-number review only
 Aliases and substitutions are DONE (Kee ruled them already in the ontology).
