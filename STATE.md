@@ -45,3 +45,5 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
 - server.json 1.1.0 adds remotes -> https://api.steelbrain.dev/mcp.
 - Unlocks: smithery.ai listing (needed a streamable-HTTP /mcp endpoint).
 - Count remote callers: sqlite3 shell.db "select date(ts),count(*) from usage where key='mcp-public' group by 1"
+- Pinned mcp>=1.10,<2 (25 Sep 2026): mcp 2.x removed the stateless_http kwarg;
+  unpinned install on the droplet pulled 2.1.1 and broke test collection.
