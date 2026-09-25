@@ -28,7 +28,7 @@ API key, free tier at launch.
 
 ## Submit to
 1. Official MCP Registry — github.com/modelcontextprotocol/registry
-2. mcp.so
+2. mcp.so — skipped by decision ($39 pay-to-publish).
 3. smithery.ai
 4. glama.ai
 (Verify each portal's current flow on the day — registry landscape shifts monthly.)
