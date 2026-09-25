@@ -22,8 +22,8 @@
         Published to the official MCP Registry as io.github.dryow1/steel-brain
         v1.0.0 (oci package, status active). Glama release built + published
         via the admin Dockerfile page -- quality score 58% (up from 33%).
-        <-- NOT DONE: mcp.so + smithery.ai submissions (out of this round's
-        scope; registry/metadata.md still lists them if picked up later).
+        smithery.ai listed 25 Sep 2026 (see v0.2.0 below).
+        <-- NOT DONE: mcp.so submission (registry/metadata.md still lists it).
 
 ## KB provenance
 - 23 grades, all serve now (marked draft where property numbers unconfirmed)
@@ -47,3 +47,13 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
 - Count remote callers: sqlite3 shell.db "select date(ts),count(*) from usage where key='mcp-public' group by 1"
 - Pinned mcp>=1.10,<2 (25 Sep 2026): mcp 2.x removed the stateless_http kwarg;
   unpinned install on the droplet pulled 2.1.1 and broke test collection.
+
+## v0.2.0 deploy + listings (25 Sep 2026)
+- Droplet snapshot "steel-brain-before-mcp" taken before deploy.
+- Deployed f449567 to droplet (/root/steel-brain, runs as root): 19 passed on
+  the droplet, service restarted. /health -> 0.2.0, 23 servable; /mcp
+  tools/list -> 3 tools; yhfsteel.com (same droplet) still 200.
+- MCP Registry: io.github.dryow1/steel-brain 1.1.0 published, active + latest,
+  remote https://api.steelbrain.dev/mcp. 1.0.0 still active.
+- smithery.ai: listed as dryow-jt/steel-brain (gateway
+  steel-brain--dryow-jt.run.tools), release SUCCESS, 3 tools found.
