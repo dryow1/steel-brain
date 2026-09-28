@@ -57,3 +57,9 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
   remote https://api.steelbrain.dev/mcp. 1.0.0 still active.
 - smithery.ai: listed as dryow-jt/steel-brain (gateway
   steel-brain--dryow-jt.run.tools), release SUCCESS, 3 tools found.
+
+## Minion (GitHub Action) config (28 Sep 2026)
+- .github/workflows/claude.yml renamed "Minion": 30-min timeout, max 40 turns,
+  tool allowlist (edit + python/pip/pytest/make + read-only git),
+  SB_SERVE_UNVERIFIED=1 on the job (test mode only, never on the droplet).
+- CLAUDE.md: "Minion rules" section (no deploy, mcp<2, full tests, small diffs).
