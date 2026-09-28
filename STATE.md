@@ -75,3 +75,12 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
   SB_SERVE_UNVERIFIED=1 on the job (test mode only, never on the droplet).
 - CLAUDE.md: "Minion rules" section (no deploy, mcp<2, full tests, small diffs).
 
+## serverInfo fix deploy (28 Sep 2026)
+- Deployed c37b96d (main incl. PR #7) to droplet (/root/steel-brain, runs as root):
+  git pull --ff-only, pip install -r requirements.txt (mcp still 1.30.0),
+  19 passed on the droplet, service restarted.
+- /health -> 0.2.0, 23/23 servable; /mcp initialize serverInfo ->
+  steel-brain 0.2.0 (was 1.30.0); tools/list -> 3 tools; yhfsteel.com still 200.
+- No snapshot taken (code-only change). Rollback: git checkout f449567 + restart.
+- Smithery may show the old version until it re-scans.
+
