@@ -1,5 +1,7 @@
 fastapi>=0.110
 uvicorn>=0.29
+# mcp>=2 removed the stateless_http kwarg that mcp_server.py/http_api.py rely on
+# (see STATE.md v0.2.0); pinned <2 until that's addressed (issue #4).
 mcp>=1.10,<2
 pytest>=8.0
 httpx>=0.27

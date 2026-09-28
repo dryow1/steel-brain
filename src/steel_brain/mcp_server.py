@@ -1,7 +1,8 @@
 """MCP server - the registry door.
 stdio:  python -m steel_brain.mcp_server
 HTTP:   mounted at /mcp by http_api.py (streamable HTTP, for remote agents).
-Supports mcp SDK 2.x (MCPServer) and 1.x (FastMCP)."""
+Requires mcp SDK 1.x (FastMCP); mcp>=2 removed the stateless_http kwarg this
+server relies on - see requirements.txt."""
 import os
 from . import __version__
 from .kb import KB, KB_DIR
@@ -20,15 +21,11 @@ def build_server(on_call=None, tools=None, **settings):
     """on_call(tool_name) runs before each tool call (metering / limits); it may raise to refuse.
     Extra settings (stateless_http, json_response, transport_security) pass to the SDK."""
     t = tools or _tools
-    try:
-        from mcp.server import MCPServer as ServerClass          # mcp >= 2.0
-    except ImportError:
-        from mcp.server.fastmcp import FastMCP as ServerClass   # mcp 1.x
-    srv = ServerClass(name="steel-brain", instructions=INSTRUCTIONS, **settings)
-    # FastMCP wraps a low-level Server as ._mcp_server; MCPServer (2.x) is that server
-    # itself. Either way, the SDK falls back to its own package version in serverInfo
-    # unless .version is set here, so set it directly rather than trust constructor kwargs.
-    getattr(srv, "_mcp_server", srv).version = __version__
+    from mcp.server.fastmcp import FastMCP
+    srv = FastMCP(name="steel-brain", instructions=INSTRUCTIONS, **settings)
+    # FastMCP wraps a low-level Server as ._mcp_server, which is what actually reports
+    # serverInfo; the SDK falls back to its own package version there unless set directly.
+    srv._mcp_server.version = __version__
 
     def _hit(name):
         if on_call:
