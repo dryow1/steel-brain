@@ -86,6 +86,16 @@ Free tier at launch. Contact: dryow.jt@gmail.com
 
 ## Development
 
+One-command local test setup:
+
+    make test
+
+or directly:
+
+    bash scripts/test.sh
+
+This creates a `.venv` (via `python3 -m venv .venv`) if it doesn't exist yet, installs `requirements.txt` into it, sets `SB_SERVE_UNVERIFIED=1` (needed so the test suite can exercise unverified KB entries), and runs `pytest`. Works on macOS and Linux. Extra arguments are passed through to pytest, e.g. `bash scripts/test.sh tests/test_gate2.py -v`.
+
     python -m pytest tests/    # 15 tests (10 acceptance + 5 domain-safety guards)
 
 ## License

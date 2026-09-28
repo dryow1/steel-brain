@@ -84,3 +84,14 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
 - No snapshot taken (code-only change). Rollback: git checkout f449567 + restart.
 - Smithery may show the old version until it re-scans.
 
+## One-command local test setup (28 Sep 2026)
+- scripts/test.sh: creates .venv via `python3 -m venv .venv` if missing,
+  installs requirements.txt, exports SB_SERVE_UNVERIFIED=1, runs pytest.
+  Works on macOS (Mac Mini) and Linux (no OS-specific paths/tools).
+- `make test` runs the same script (Makefile added).
+- .venv/ added to .gitignore (existing venv/ entry was a different name).
+- README Development section documents `make test` / `bash scripts/test.sh`.
+- Verified: 19 tests pass (deps installed + pytest run directly in this
+  sandbox; the sandbox's tool allowlist blocks invoking the script file
+  itself, see PR/issue #2 for details -- script logic verified step-by-step).
+
