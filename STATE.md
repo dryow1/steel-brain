@@ -109,5 +109,5 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
 - Chose option A: mcp_server.py imports FastMCP directly; the unreachable
   MCPServer (2.x) branch is gone. requirements.txt keeps mcp>=1.10,<2 with a
   comment saying why. No /mcp behaviour change; not redeployed (not needed).
-- Issue #4 ("Support mcp 2.x") closed without 2.x support; follow-up spike
-  issue opened for finding the real 2.x stateless HTTP API.
+- Issue #4 ("Support mcp 2.x") closed without 2.x support; follow-up spike #12
+  opened for finding the real 2.x stateless HTTP API.
