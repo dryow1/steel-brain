@@ -68,3 +68,10 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
 - mcp stays pinned >=1.10,<2 in requirements.txt (unchanged).
 - test_mcp_http.py::test_mcp_initialize_and_list_tools now asserts
   serverInfo.version == steel_brain.__version__.
+
+## Minion (GitHub Action) config (28 Sep 2026)
+- .github/workflows/claude.yml renamed "Minion": 30-min timeout, max 40 turns,
+  tool allowlist (edit + python/pip/pytest/make + read-only git),
+  SB_SERVE_UNVERIFIED=1 on the job (test mode only, never on the droplet).
+- CLAUDE.md: "Minion rules" section (no deploy, mcp<2, full tests, small diffs).
+
