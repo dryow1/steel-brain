@@ -3,6 +3,7 @@ stdio:  python -m steel_brain.mcp_server
 HTTP:   mounted at /mcp by http_api.py (streamable HTTP, for remote agents).
 Supports mcp SDK 2.x (MCPServer) and 1.x (FastMCP)."""
 import os
+from . import __version__
 from .kb import KB, KB_DIR
 from .tools import Tools
 
@@ -24,6 +25,10 @@ def build_server(on_call=None, tools=None, **settings):
     except ImportError:
         from mcp.server.fastmcp import FastMCP as ServerClass   # mcp 1.x
     srv = ServerClass(name="steel-brain", instructions=INSTRUCTIONS, **settings)
+    # FastMCP wraps a low-level Server as ._mcp_server; MCPServer (2.x) is that server
+    # itself. Either way, the SDK falls back to its own package version in serverInfo
+    # unless .version is set here, so set it directly rather than trust constructor kwargs.
+    getattr(srv, "_mcp_server", srv).version = __version__
 
     def _hit(name):
         if on_call:

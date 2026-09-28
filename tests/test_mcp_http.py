@@ -8,6 +8,7 @@ os.environ["SB_SERVE_UNVERIFIED"] = "1"
 os.environ.setdefault("SB_DB", os.path.join(os.path.dirname(__file__), "test_shell.db"))
 
 import steel_brain.http_api as api
+from steel_brain import __version__
 from fastapi.testclient import TestClient
 
 
@@ -43,7 +44,9 @@ def _init(client):
 
 
 def test_mcp_initialize_and_list_tools(c):
-    assert _init(c)["result"]["serverInfo"]["name"] == "steel-brain"
+    server_info = _init(c)["result"]["serverInfo"]
+    assert server_info["name"] == "steel-brain"
+    assert server_info["version"] == __version__          # not the mcp SDK's own version
     names = {t["name"] for t in _rpc(c, "tools/list", {}, 2)["result"]["tools"]}
     assert names == {"grade_lookup", "substitution_check", "cert_guide"}
 
