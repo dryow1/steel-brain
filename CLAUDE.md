@@ -11,7 +11,7 @@ Spec: GATE1-STEEL-BRAIN.md (frozen — do not expand scope).
 
 ## Minion rules (GitHub Action runs)
 - Never deploy or touch the droplet.
-- Keep mcp<2 unless the issue says otherwise.
+- Keep mcp>=2,<3 unless the issue says otherwise.
 - Install deps with pip and run the full test suite before pushing.
 - Keep diffs small and scoped to the issue.
 - If something can't run, say why in the comment instead of guessing.

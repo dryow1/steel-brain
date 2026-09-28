@@ -37,9 +37,9 @@ def _transport_security():
     return {"transport_security": TransportSecuritySettings(
         enable_dns_rebinding_protection=True, allowed_hosts=hosts, allowed_origins=[])}
 
-mcp_srv = build_server(on_call=_mcp_meter, tools=tools,
-                       stateless_http=True, json_response=True, **_transport_security())
-mcp_app = mcp_srv.streamable_http_app()   # route: /mcp
+mcp_srv = build_server(on_call=_mcp_meter, tools=tools)
+mcp_app = mcp_srv.streamable_http_app(stateless_http=True, json_response=True,
+                                      **_transport_security())   # route: /mcp
 
 @contextlib.asynccontextmanager
 async def lifespan(_app):
