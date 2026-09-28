@@ -1,8 +1,8 @@
 """MCP server - the registry door.
 stdio:  python -m steel_brain.mcp_server
 HTTP:   mounted at /mcp by http_api.py (streamable HTTP, for remote agents).
-Requires mcp SDK 1.x (FastMCP); mcp>=2 removed the stateless_http kwarg this
-server relies on - see requirements.txt."""
+Requires mcp SDK 2.x (MCPServer); HTTP transport settings (stateless_http,
+json_response, transport_security) go to streamable_http_app(), not the server."""
 import os
 from . import __version__
 from .kb import KB, KB_DIR
@@ -19,17 +19,20 @@ INSTRUCTIONS = ("Steel domain knowledge from a verified trade knowledge base: gr
 
 def build_server(on_call=None, tools=None, **settings):
     """on_call(tool_name) runs before each tool call (metering / limits); it may raise to refuse.
-    Extra settings (stateless_http, json_response, transport_security) pass to the SDK."""
+    Extra settings pass to the MCPServer constructor."""
     t = tools or _tools
-    from mcp.server.fastmcp import FastMCP
-    srv = FastMCP(name="steel-brain", instructions=INSTRUCTIONS, **settings)
-    # FastMCP wraps a low-level Server as ._mcp_server, which is what actually reports
-    # serverInfo; the SDK falls back to its own package version there unless set directly.
-    srv._mcp_server.version = __version__
+    from mcp.server import MCPServer
+    from mcp.server.mcpserver.exceptions import ToolError
+    srv = MCPServer(name="steel-brain", instructions=INSTRUCTIONS, version=__version__, **settings)
 
     def _hit(name):
         if on_call:
-            on_call(name)
+            try:
+                on_call(name)
+            except Exception as e:
+                # mcp 2.x replaces unexpected tool errors with a generic message; ToolError
+                # keeps ours, so callers still see e.g. "daily limit reached".
+                raise ToolError(str(e)) from e
 
     @srv.tool()
     def grade_lookup(grade: str) -> dict:

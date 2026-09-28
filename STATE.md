@@ -95,3 +95,16 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
   sandbox; the sandbox's tool allowlist blocks invoking the script file
   itself, see PR/issue #2 for details -- script logic verified step-by-step).
 
+
+## Move to mcp 2.x (28 Sep 2026, issue #14, spike #12)
+- requirements.txt: mcp>=2,<3 (was >=1.10,<2). Tested on mcp 2.2.0.
+- mcp_server.py: MCPServer(version=__version__) replaces FastMCP + the
+  ._mcp_server.version workaround. on_call errors (daily cap) re-raised as
+  ToolError -- 2.x otherwise hides the message behind "Error executing tool".
+- http_api.py: stateless_http / json_response / transport_security now go to
+  streamable_http_app(), not the server constructor.
+- CLAUDE.md Minion rule updated to mcp>=2,<3.
+- Tests: 19 passing (make test, mcp 2.2.0).
+- NOT deployed. Droplet: Python 3.12.3 (Ubuntu 24.04); mcp 2.2.0 needs >=3.10
+  and the full requirements resolve for Linux x86_64 / py3.12. Kee to confirm
+  before deploy; droplet venv still has mcp 1.30.0 until then.
