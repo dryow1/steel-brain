@@ -96,6 +96,22 @@ Run: python scripts/validate_kb.py  -> lists what's still 'draft'.
   itself, see PR/issue #2 for details -- script logic verified step-by-step).
 
 
+## Deploy docs match the real droplet (28 Sep 2026, PR #10)
+- deploy/RUNBOOK.md, setup_vps.sh, steel-brain.service now say /root/steel-brain
+  as root (was /opt/steel-brain + steelbrain user). TODO in setup_vps.sh and the
+  unit file: move to a non-root steelbrain user + /opt as future hardening.
+- Read-only check against the droplet: repo unit file == live
+  /etc/systemd/system/steel-brain.service (ignoring comments), no drop-ins;
+  uvicorn runs as root from /root/steel-brain on :8080; no steelbrain user,
+  no /opt/steel-brain. Nothing changed on the droplet.
+
+## mcp stays <2, dead 2.x path removed (28 Sep 2026, PR #11, issue #4)
+- Chose option A: mcp_server.py imports FastMCP directly; the unreachable
+  MCPServer (2.x) branch is gone. requirements.txt keeps mcp>=1.10,<2 with a
+  comment saying why. No /mcp behaviour change; not redeployed (not needed).
+- Issue #4 ("Support mcp 2.x") closed without 2.x support; follow-up spike #12
+  opened for finding the real 2.x stateless HTTP API.
+
 ## Move to mcp 2.x (28 Sep 2026, issue #14, spike #12)
 - requirements.txt: mcp>=2,<3 (was >=1.10,<2). Tested on mcp 2.2.0.
 - mcp_server.py: MCPServer(version=__version__) replaces FastMCP + the
